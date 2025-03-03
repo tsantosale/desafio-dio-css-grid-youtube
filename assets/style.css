@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    color: #000000;
+}
+h2 {
+    font-size: 14px;
+}
+p {
+    font-size: 12px;
+}
+nav {
+    /* não definir max-width pois o design de nav exige que vá de ponta a ponta*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left, .center, .right {
+    display: flex;
+    align-items: center; /*ao aplicar distorce a largura verticalmente, passando a ocupar somente o espaço do conteúdo do item, essencial aqui para evitar distorção das imagens*/
+    gap: 15px;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.sidebar {
+    width: 218px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    gap: 22px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    font-weight: 400;
+}
+.menu > h2 {
+    font-weight: 400;
+}
+.home > h2 {
+    font-weight: 700;
+}
+.videos-main {
+    width: 100%;
+    background-color: rgb(238, 224, 255);
+
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    gap:16px;    
+}
+.thumb {
+    width: 350px;
+    padding: 16px;
+
+    margin-top: 16px;
+    margin-left: 100px;
+    margin-bottom: 16px;
+}
+.thumb > img {
+    width: 100%;
+    object-fit: cover;
+}
+.video-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+    margin-top: 16px;
+}
+.video-details > img {
+    width: 60px;
+    object-fit: contain;
+}
+.text-video > h2 {
+    text-wrap: wrap;
+    margin-bottom: 10px;
+}
